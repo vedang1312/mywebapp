@@ -1,0 +1,21 @@
+
+<div class="container">
+
+  <button (click)="launchFirstComponent()" class="btn btn-success">First</button>
+  <button (click)="launchSecondComponent()" class="btn btn-success">Second</button>
+  <button (click)="launchThirdComponent()" class="btn btn-success">Third</button>
+  <button (click)="launchForthComponent()" class="btn btn-success">Fourth</button>
+
+  <hr>
+
+  <a routerLink="/first" class="btn btn-info">First</a>
+  <a routerLink="/second" class="btn btn-info">Second</a>
+  <a routerLink="/third" class="btn btn-info">Third</a>
+  <a routerLink="/forth" class="btn btn-info">Forth</a>
+
+  <hr>
+
+  <!-- placeholder used to launch the respective (as per the url) component's UI -->
+  <router-outlet></router-outlet>
+  
+</div>
